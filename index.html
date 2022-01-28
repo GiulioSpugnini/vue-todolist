@@ -16,6 +16,10 @@
     <div id="root" class="my-4">
         <div class="container">
             <ul class="list-group row justify-content-between">
+                <div class="col-12 py-3">
+                    <input v-model="inputText" type="text">
+                    <button>Aggiungi</button>
+                </div>
                 <li v-for="(item, index) in items" class="col-12 list-group-item">
                     <div class="row justify-content-between">
                         <h3 class="col-11 flex-grow-1 d-inline" :class="{active: isActive, 'isDone': item.done}"> <input class="mx-4" v-model='item.done' type="checkbox" id=''>{{item.text}}</h3>
