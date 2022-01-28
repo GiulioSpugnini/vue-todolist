@@ -33,6 +33,9 @@ const app = new Vue({
     methods: {
         isActive(index) {
             return this.done;
+        },
+        deleteItem(index) {
+            this.items.splice(index, 1);
         }
     }
 });
