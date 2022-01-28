@@ -6,7 +6,7 @@ const app = new Vue({
     data: {
         items: [{
                 text: 'Carne',
-                done: false,
+                done: true,
             },
             {
                 text: 'Latte',
@@ -14,7 +14,7 @@ const app = new Vue({
             },
             {
                 text: 'Pesce',
-                done: false,
+                done: true,
             },
             {
                 text: 'Acqua',
@@ -22,7 +22,7 @@ const app = new Vue({
             },
             {
                 text: 'Pane',
-                done: false,
+                done: true,
             },
             {
                 text: 'Cioccolate',
@@ -30,4 +30,9 @@ const app = new Vue({
             },
         ]
     },
+    methods: {
+        isActive(index) {
+            return this.done;
+        }
+    }
 });
