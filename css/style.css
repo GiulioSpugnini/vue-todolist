@@ -1,3 +1,12 @@
 .isDone {
     text-decoration: line-through;
 }
+
+body {
+    background-color: darkslategray;
+}
+
+.list-group {
+    border-radius: 10px;
+    border: 2px white solid;
+}
