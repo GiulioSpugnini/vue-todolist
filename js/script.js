@@ -37,6 +37,10 @@ const app = new Vue({
         },
         deleteItem(index) {
             this.items.splice(index, 1);
-        }
+        },
+        addItem() {
+            newText = this.inputText.trim();
+            this.items.push({ text: newText, done: false });
+        },
     }
 });

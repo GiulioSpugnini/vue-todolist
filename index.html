@@ -18,7 +18,7 @@
             <ul class="list-group row justify-content-between">
                 <div class="col-12 py-3">
                     <input v-model="inputText" type="text">
-                    <button>Aggiungi</button>
+                    <button @click='addItem(inputText)'>Aggiungi</button>
                 </div>
                 <li v-for="(item, index) in items" class="col-12 list-group-item">
                     <div class="row justify-content-between">
