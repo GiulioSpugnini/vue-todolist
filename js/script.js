@@ -45,8 +45,7 @@ const app = new Vue({
         },
         changeDone(index) {
             const changeDone = this.items.map((item, i) => {
-                if (i === index) item.done = !item.done;
-                return item;
+                (i === index) ? item.done = !item.done: item;
             });
             this.item = changeDone;
         },
